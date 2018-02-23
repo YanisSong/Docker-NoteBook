@@ -72,12 +72,21 @@ Commond and function:
                         Specify the UI Type: (gui|sdl|headless|separate) [$VIRTUALBOX_UI_TYPE]
       }
       
+      docker-machine rm machine-name [remove virtual machine from docker]
+      
 2. docker images [ list image information]
     {
       docker run hello-world [will create a default image hello-world]
     }
     
+    docker rmi imageID [remove image from docker]
+    
 3.docker ps –a [list the container in Docker]
+
+  docker rm [OPTIONS] CONTAINER [CONTAINER...]Remove one or more containers
+  -f,--force=falseForce removal of running container
+  -l,--link=falseRemove the specified link andnot the underlying container
+  -v,--volumes=falseRemove the volumes associated with the container
 
 
 
