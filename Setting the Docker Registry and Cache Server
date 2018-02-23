@@ -1,0 +1,11 @@
+Login to a dedicated machine where Docker registry proxy will be running.
+
+Make sure that Docker Engine is installed on this machine.
+
+Create a new Docker registry:
+[
+docker run -d -p 6000:5000 \
+    -e REGISTRY_PROXY_REMOTEURL=https://registry-1.docker.io \
+    --restart always \
+    --name registry registry:2
+]
